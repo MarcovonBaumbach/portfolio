@@ -1,0 +1,24 @@
+<header>
+    <div></div>
+    <h2>Contact</h2>
+</header>
+<div class="contact-div">
+    <img class="img-blurred" src="assets/img/contact-blurred.png">
+    <img class="img-arrow" (click)="scrollToSection('menu')" src="assets/img/arrow-up.png">
+    <div class="contact-div-text">
+        <h3>Got a problem to solve?</h3>
+        <span>
+            Contact me through this form, I am interested in hearing from you, 
+            knowing your ideas and contributing to your projects with my work.
+        </span>
+        <span>
+            Need a Frontend developer? <b>Contact me!</b>
+        </span>
+    </div>
+    <form (submit)="sendMail()" ngNativeValidate #myForm>
+        <input class="input-style" type="text" name="name" #nameField placeholder="Your name" required>
+        <input class="input-style" type="email" name="email" #emailField placeholder="Your email" required>
+        <textarea class="input-style" name="message" #messageField placeholder="Your message" required></textarea>
+        <button type="submit" class="buttons button-blue" #sendButton>Send message :&rpar;</button>
+    </form>
+</div>

@@ -1,0 +1,20 @@
+.dialog {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    height: 246px;
+    background-color: #141D2F;
+    border: 2px solid #4B47FF;
+    overflow: hidden;
+}
+
+.text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    color: #FFFFFF;
+}

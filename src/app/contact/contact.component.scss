@@ -1,0 +1,116 @@
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 50px;
+    z-index: 2;
+
+    div {
+        width: 50px;
+        height: 0;
+        border: 4px solid #4B47FF;
+        margin-bottom: 30px;
+    }
+}
+
+.contact-div {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 85px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 200px;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 35px;
+        width: 617px;
+        z-index: 2;
+
+        textarea {
+            height: 200px;
+        }
+
+        @media (max-width: 1400px) {
+            width: 30vw;
+        }
+    }
+}
+
+.img-blurred {
+    position: absolute;
+    height: 700px;
+    top: 250px;
+    left: 0;
+}
+
+.img-arrow {
+    position: absolute;
+    bottom: 100px;
+    right: 100px;
+    border: 2px solid white;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: all 125ms ease-in-out;
+    &:hover {
+        transition: all 125ms ease-in-out;
+        opacity: 0.5;
+    }
+}
+
+.input-style {
+    box-sizing: border-box;
+    padding: 15px 25px;
+    width: 100%;
+    background: rgba($color: #000000, $alpha: 0);
+    border: 1px solid #4B47FF;
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    &:focus {
+        outline: none !important;
+        border: 1px solid #00BEE8;
+    }
+    &::placeholder {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}
+
+.contact-div-text {
+    display: flex;
+    flex-direction: column;
+    width: 473px;
+
+    h3 {
+        margin: 0;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: #FFFFFF;
+        padding-bottom: 35px;
+    }
+
+    span {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+        padding-bottom: 25px;
+    }
+
+    @media (max-width: 1200px) {
+        width: 400px;
+    }
+}

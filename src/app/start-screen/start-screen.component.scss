@@ -1,0 +1,77 @@
+header {
+    height: 100vh;
+    background-color: #141D2F;
+}
+
+.curved-background {
+    position: absolute;
+    top: 500px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: calc(100vh - 377.6px);
+}
+
+.photo-shadows {
+    position: absolute;
+    top: 221px;
+    left: 12;
+    width: 48%;
+    max-width: 700px;
+}
+
+.profile-picture {
+    position: absolute;
+    top: 15vh;
+    left: 12;
+    height: 70vh;
+    @media (max-width: 1250px) {
+        top: 33vh;
+        height: 50vh;
+    }
+}
+
+.span-name {
+    position: absolute;
+    left: 50%;
+    top: 297px;
+    display: flex;
+    flex-direction: column;
+    width: 43%;
+
+    span {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 3.7vw;
+        color: #FFFFFF;
+    }
+
+    p {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 3.95vw;
+        margin: 0;
+        color: #4B47FF;
+    }
+
+    button {
+        width: fit-content;
+        margin-left: 10vw;
+        margin-top: 35px;
+        z-index: 1;
+    }
+}
+
+.rotate-text {
+    position: absolute;
+    right: 50%;
+    top: calc(297px + 2.5vw);
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4vw;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+}

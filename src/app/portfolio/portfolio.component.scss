@@ -1,0 +1,131 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 42px;
+    padding-top: 143px;
+
+    div {
+        border: 4px solid;
+        border-color: #4B47FF;
+        height: 0;
+        width: 100%;
+        margin-bottom: 30px;
+    }
+}
+
+.no-color {
+    border-color: #141D2F !important;
+    width: 75% !important;
+}
+
+.short-div {
+    width: 15% !important;
+}
+
+
+.sub-headline {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 116px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.project-img {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    margin-bottom: 150px;
+}
+
+.project-content {
+    padding-left: 35px;
+    width: 513px;
+
+    @media (max-width: 1250px) {
+        padding-left: 0;
+    }
+
+    h3 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 32px;
+        color: #4B47FF;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    h4 {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 23px;
+        color: #00BEE8;
+        padding-bottom: 15px;
+        margin: 0;
+    }
+
+    span {
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        color: #FFFFFF;
+    }
+}
+
+.button-div {
+    margin-top: 35px;
+    display: flex;
+    gap: 86px;
+
+    @media (max-width: 1250px) {
+        gap: 40px;
+    }
+}
+
+.project-reverse {
+    flex-direction: row-reverse;
+    text-align: right;
+}
+
+.content-reverse {
+    padding-left: 0;
+    padding-right: 35px;
+
+    @media (max-width: 1250px) {
+        padding-right: 0;
+    }
+}
+
+.button-div-reverse {
+    justify-content: flex-end;
+}
+
+.img-violett {
+    position: absolute;
+    height: 800px;
+    left: 0;
+    top: -200px;
+}
+
+.higher-index {
+    z-index: 2;
+}
+
+@media (max-width: 1250px) {
+    .project-img {
+        img {
+            width: 480px;
+            height: auto;
+        }
+    }
+}
