@@ -14,10 +14,19 @@
         font-size: 16px;
         color: #FFFFFF;
     }
+
+    @media (max-width: 960px) {
+        margin-left: 25px;
+        padding-right: 25px;
+    }
 }
 
 .about-me-text {
-    max-width: 471px;
+    max-width: 571px;
+    z-index: 1;
+    @media (max-width: 1400px) {
+        max-width: 471px;
+    }
 }
 
 .sub-category {
@@ -32,6 +41,9 @@
     padding-top: 5px;
     padding-left: 35px;
     padding-right: 35px;
+    @media (max-width: 960px) {
+        padding-left: 0;
+    }
 }
 
 .img-puzzle {
@@ -40,6 +52,9 @@
     padding-top: 5px;
     padding-left: 35px;
     padding-right: 20px;
+    @media (max-width: 960px) {
+        padding-left: 0;
+    }
 }
 
 .img-blurred {
@@ -71,5 +86,9 @@
         @media (max-width: 1250px) {
             width: 5vw;
         }
+    }
+
+    @media (max-width: 960px) {
+        display: none;
     }
 }

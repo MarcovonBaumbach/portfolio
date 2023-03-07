@@ -5,11 +5,19 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media (max-width: 960px) {
+        flex-direction: column-reverse;
+        gap: 35px;
+        padding-left: 0;
+    }
 }
+
 
 .skill-icons {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     img {
         padding-left: 70px;
         padding-right: 70px;
@@ -35,13 +43,54 @@
             padding-right: 20px;
         }
     }
+
+    @media (max-width: 960px) {
+        padding-left: 0;
+        padding-right: 0;
+        img {
+            width: 90px;
+            height: auto;
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    
+    @media (max-width: 600px) {
+        padding-left: 9px;
+        padding-right: 9px;
+        img {
+            width: 70px;
+            height: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
+
+    @media (max-width: 350px) {
+        padding-left: 9px;
+        padding-right: 9px;
+        img {
+            width: 50px;
+            height: auto;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+    }
 }
 
 .my-skills-text {
-    min-width: 471px !important;
+    min-width: 471px;
     display: flex;
     flex-direction: column;
     align-items: center;
+
+    @media (max-width: 960px) {
+        align-items: flex-end;
+        padding-right: 25px;
+        padding-left: 25px;
+        min-width: unset;
+    }
 
     span {
         font-family: 'Poppins';
@@ -50,6 +99,10 @@
         font-size: 16px;
         color: #FFFFFF;
         text-align: center;
+
+        @media (max-width: 960px) {
+            text-align: end;
+        }
     }
 
     button {
@@ -63,10 +116,25 @@
     height: 0px;
     border: 4px solid #4B47FF;
     margin-bottom: 165px;
+     @media (max-width: 960px) {
+        display: none;
+     }
 }
 
 .img-blurred {
     position: absolute;
     left: 0;
     top: 100px;
+}
+
+@media (min-width: 961px) {
+    .show-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .show-desktop {
+        display: none;
+    }
 }

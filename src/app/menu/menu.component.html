@@ -1,8 +1,15 @@
 <div class="menu">
-    <img (click)="scrollToSection('menu')" src="/assets/img/logo.png">
+    <img (click)="scrollToSection('menu')" src="assets/img/logo.png">
     <div class="links">
-        <a (click)="scrollToSection('about-me')">About me</a>
-        <a (click)="scrollToSection('my-skills')">Skills</a>
-        <a (click)="scrollToSection('portfolio')">Portfolio</a>
+        <a class="hover-underline-animation" (click)="scrollToSection('about-me')">About me</a>
+        <a class="hover-underline-animation" (click)="scrollToSection('my-skills')">Skills</a>
+        <a class="hover-underline-animation" (click)="scrollToSection('portfolio')">Portfolio</a>
     </div>
+    <img class="burger-menu" [matMenuTriggerFor]="menu" src="assets/img/burger-menu.png">
 </div>
+<mat-menu class="mat-menu-style" #menu="matMenu">
+    <button (click)="scrollToSection('about-me')" mat-menu-item><span class="mat-button-style">About me</span></button>
+    <button (click)="scrollToSection('my-skills')" mat-menu-item><span class="mat-button-style">Skills</span></button>
+    <button (click)="scrollToSection('portfolio')" mat-menu-item><span class="mat-button-style">Portfolio</span></button>
+    <button (click)="scrollToSection('contact')" mat-menu-item><span class="mat-button-style">Contact</span></button>
+</mat-menu>

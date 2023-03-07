@@ -10,24 +10,45 @@ header {
     right: 0;
     width: 100%;
     height: calc(100vh - 377.6px);
+
+    @media (max-width: 960px) {
+        height: 700px;
+        max-width: 100%;
+        top: 30vh;
+        object-fit: cover;
+    }
 }
 
 .photo-shadows {
     position: absolute;
     top: 221px;
-    left: 12;
+    left: 0;
     width: 48%;
     max-width: 700px;
+    @media (max-width: 960px) {
+        top: 150px;
+        width: 500px;
+    }
 }
 
 .profile-picture {
     position: absolute;
     top: 15vh;
-    left: 12;
+    left: 0;
     height: 70vh;
     @media (max-width: 1250px) {
         top: 33vh;
         height: 50vh;
+    
+    }
+    @media (max-width: 960px) {
+        top: 12vh;
+    }
+
+    @media (max-width: 600px) {
+        top: 19vh;
+        height: 40vh;
+        left: -25px;
     }
 }
 
@@ -38,6 +59,7 @@ header {
     display: flex;
     flex-direction: column;
     width: 43%;
+    z-index: 3;
 
     span {
         font-family: 'Poppins';
@@ -61,6 +83,27 @@ header {
         margin-left: 10vw;
         margin-top: 35px;
         z-index: 1;
+        @media (max-width: 960px) {
+            margin-left: 0;
+        }
+    }
+
+    @media (max-width: 960px) {
+        position: absolute;
+        left: 20vw;
+        right: 25px;
+        top: 60vh;
+        display: flex;
+        flex-direction: column;
+        width: 70vw;
+
+        span {
+            font-size: 6vw;
+        }
+    
+        p {
+            font-size: 6.2vw;
+        }
     }
 }
 
@@ -74,4 +117,31 @@ header {
     font-size: 4vw;
     color: #FFFFFF;
     transform: rotate(-90deg);
+    z-index: 3;
+
+    @media (max-width: 960px) {
+        left: 25px;
+        right: unset;
+        top: calc(60vh + 4.3vw);
+        font-size: 6.2vw;
+    }
+}
+
+.show-mobile {
+    position: absolute;
+    left: calc(50% - 92.5px);
+    bottom: 120px;
+    z-index: 3;
+}
+
+@media (min-width: 961px) {
+    .show-mobile {
+        display: none;
+    }
+}
+
+@media (max-width: 960px) {
+    .show-desktop {
+        display: none;
+    }
 }

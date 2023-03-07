@@ -17,6 +17,7 @@ import { FooterComponent } from './footer/footer.component';
 import { AppRoutingModule } from './app-routing.module';
 import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   entryComponents: [SuccessDialogComponent],
@@ -41,7 +42,8 @@ import { ImpressumComponent } from './impressum/impressum.component';
     BrowserAnimationsModule,
     MatDialogModule,
     MatFormFieldModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -3,6 +3,8 @@
     top: 0;
     left: 0;
     right: 0;
+    box-sizing: border-box;
+    max-width: 100% !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,6 +18,7 @@
     img {
         cursor: pointer;
         transition: all 125ms ease-in-out;
+
         &:hover {
             transition: all 125ms ease-in-out;
             transform: scale(1.01);
@@ -34,9 +37,56 @@
         font-weight: 400;
         cursor: pointer;
         transition: all 125ms ease-in-out;
+
         &:hover {
             transition: all 125ms ease-in-out;
-            opacity: 0.5;
+            opacity: 0.75;
         }
+    }
+}
+
+.burger-menu {
+    &:hover {
+        opacity: 0.75;
+    }
+
+    @media (min-width: 961px) {
+        display: none;
+    }
+}
+
+::ng-deep .mat-menu-style {
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+    margin-top: 37px !important;
+    height: calc(100vh - 111px);
+    width: 100vw;
+    max-width: 100% !important;
+    background: #414856;
+}
+
+.mat-button-style {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+
+button {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+@media (max-width: 960px) {
+    .links {
+        display: none;
+    }
+
+    .menu {
+        padding-left: 25px;
+        padding-right: 25px;
     }
 }

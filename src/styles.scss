@@ -75,6 +75,10 @@ html {
         cursor: pointer;
         animation: jump 250ms ease-in-out;
     }
+
+    @media (max-width: 960px) {
+        font-size: 28px;
+    }
 }
 
 @keyframes jump {
@@ -100,8 +104,34 @@ h2 {
     padding: 0;
     color: #FFFFFF;
     z-index: 2;
+
+    @media (max-width: 960px) {
+        font-size: 45px;
+    }
 }
 
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #4B47FF;// rgba($color: white, $alpha: 0.75);
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
 /* poppins-100 - latin */
 @font-face {
     font-display: swap;
