@@ -17,6 +17,10 @@ header {
         top: 30vh;
         object-fit: cover;
     }
+
+    @media (max-width: 600px) {
+        top: 20vh;
+    }
 }
 
 .photo-shadows {
@@ -28,6 +32,11 @@ header {
     @media (max-width: 960px) {
         top: 150px;
         width: 500px;
+    }
+
+    @media (max-width: 600px) {
+        top: 221px;
+        width: 100%;
     }
 }
 
