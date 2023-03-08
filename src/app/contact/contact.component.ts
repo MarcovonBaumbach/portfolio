@@ -33,7 +33,7 @@ export class ContactComponent {
 
   openDialog() {
     this.dialog.open(SuccessDialogComponent,  { 
-      height: '250px', 
+      height: '300px', 
       width: '450px'
       });
   }

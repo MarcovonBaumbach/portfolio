@@ -148,6 +148,9 @@ header {
     height: 800px;
     left: 0;
     top: -200px;
+    @media (max-width: 960px) {
+        width: 350px !important;
+    }
 }
 
 .higher-index {

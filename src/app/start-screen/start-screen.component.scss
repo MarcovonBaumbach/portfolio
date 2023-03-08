@@ -138,8 +138,8 @@ header {
 
 .show-mobile {
     position: absolute;
-    left: calc(50% - 92.5px);
-    bottom: 120px;
+    right: 25px;
+    top: 150px;
     z-index: 3;
 }
 
@@ -152,5 +152,16 @@ header {
 @media (max-width: 960px) {
     .show-desktop {
         display: none;
+    }
+
+    button {
+        font-size: 23px;
+    }
+}
+
+@media (max-width: 350px) {
+    button {
+        font-size: 16px;
+        padding: 10px !important;
     }
 }

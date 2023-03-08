@@ -23,16 +23,16 @@ export class PortfolioComponent {
     );
   }
 
-  openPokedex() {
+  openRingOfFire() {
     window.open(
-      'https://marco-von-baumbach.developerakademie.net/pokedex',
+      'https://marco-von-baumbach.developerakademie.net/ringoffire',
       '_blank'
     );
   }
 
-  githubPokedex() {
+  githubRingOfFire() {
     window.open(
-      'https://github.com/MarcovonBaumbach/pokedex',
+      'https://github.com/MarcovonBaumbach/ringoffire',
       '_blank'
     );
   }
