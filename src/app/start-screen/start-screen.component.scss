@@ -14,12 +14,12 @@ header {
     @media (max-width: 960px) {
         height: 700px;
         max-width: 100%;
-        top: 30vh;
+        top: 38vh;
         object-fit: cover;
     }
 
     @media (max-width: 600px) {
-        top: 20vh;
+        top: 30vh;
     }
 }
 
@@ -27,11 +27,12 @@ header {
     position: absolute;
     top: 221px;
     left: 0;
-    width: 48%;
-    max-width: 700px;
+    width: 700px;
+
     @media (max-width: 960px) {
-        top: 150px;
-        width: 500px;
+        left: 0;
+        width: unset;
+        max-width: 700px;
     }
 
     @media (max-width: 600px) {
@@ -45,36 +46,37 @@ header {
     top: 15vh;
     left: 0;
     height: 70vh;
-    @media (max-width: 1250px) {
-        top: 33vh;
-        height: 50vh;
     
-    }
     @media (max-width: 960px) {
         top: 12vh;
     }
 
     @media (max-width: 600px) {
-        top: 19vh;
-        height: 40vh;
-        left: -25px;
+        height: unset;
+        width: 100vw;
+    }
+
+    @media (max-width: 375px) {
+        top: 20vh;
+        height: unset;
+        width: 100vw;
     }
 }
+
 
 .span-name {
     position: absolute;
     left: 50%;
     top: 297px;
     display: flex;
-    flex-direction: column;
-    width: 43%;
+    justify-content: flex-start;
     z-index: 3;
 
     span {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 700;
-        font-size: 3.7vw;
+        font-size: 3.0vw;
         color: #FFFFFF;
     }
 
@@ -82,7 +84,7 @@ header {
         font-family: 'Poppins';
         font-style: normal;
         font-weight: 400;
-        font-size: 3.95vw;
+        font-size: 3.2vw;
         margin: 0;
         color: #4B47FF;
     }
@@ -93,75 +95,56 @@ header {
         margin-top: 35px;
         z-index: 1;
         @media (max-width: 960px) {
+            margin-top: 15px;
+            margin-left: 20vw;
+        }
+        @media (max-width: 600px) {
             margin-left: 0;
+            width: 100%;
         }
     }
 
     @media (max-width: 960px) {
         position: absolute;
-        left: 20vw;
-        right: 25px;
-        top: 60vh;
-        display: flex;
-        flex-direction: column;
-        width: 70vw;
+        left: 50%;
+        transform: translateX(-50%);
+        top: unset;
+        bottom: 75px;
+        width: 90vw;
+
 
         span {
             font-size: 6vw;
         }
     
         p {
-            font-size: 6.2vw;
+            font-size: 6.4vw;
         }
     }
 }
 
 .rotate-text {
-    position: absolute;
-    right: 50%;
-    top: calc(297px + 2.5vw);
+   
     font-family: "Poppins";
     font-style: normal;
     font-weight: 400;
-    font-size: 4vw;
+    font-size: 3.2vw;
     color: #FFFFFF;
     transform: rotate(-90deg);
+    padding-top: 2.2vw;
+    padding-bottom: 2.2vw;
+    height: fit-content;
     z-index: 3;
 
     @media (max-width: 960px) {
-        left: 25px;
-        right: unset;
-        top: calc(60vh + 4.3vw);
-        font-size: 6.2vw;
+        font-size: 6.5vw;
+        padding-top: 6.2vw;
     }
 }
 
-.show-mobile {
-    position: absolute;
-    right: 25px;
-    top: 150px;
-    z-index: 3;
-}
-
-@media (min-width: 961px) {
-    .show-mobile {
-        display: none;
-    }
-}
 
 @media (max-width: 960px) {
-    .show-desktop {
-        display: none;
-    }
-
     button {
         font-size: 23px;
-    }
-}
-
-@media (max-width: 350px) {
-    button {
-        font-size: 16px;
-        padding: 10px !important;
     }
 }

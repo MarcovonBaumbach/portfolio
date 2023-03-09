@@ -1,13 +1,14 @@
 <header>
     <img class="photo-shadows" src="assets/img/photo-shadows.png">
     <img class="profile-picture" src="assets/img/profile1.png">
-    <div class="rotate-text">I am</div>
     <div class="span-name">
-        <span>Marco von Baumbach</span>
-        <p>FRONTEND DEVELOPER</p>
-        <button class="buttons button-blue show-desktop" (click)="scrollToSection('contact')">Let's talk!</button>
+        <div class="rotate-text">I am</div>
+        <div class="text-div">
+            <span>Marco von Baumbach</span>
+            <p>FRONTEND DEVELOPER</p>
+            <button class="buttons button-blue" (click)="scrollToSection('contact')">Let's talk!</button>
+        </div>
     </div>
     <app-icon-bar></app-icon-bar>
-    <button class="buttons button-blue show-mobile" (click)="scrollToSection('contact')">Let's talk!</button>
     <img class="curved-background" src="assets/img/curved-background.png">
 </header>
