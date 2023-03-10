@@ -5,21 +5,31 @@ header {
 
 .curved-background {
     position: absolute;
-    top: 500px;
+    bottom: -150px;
     left: 0;
     right: 0;
     width: 100%;
     height: calc(100vh - 377.6px);
 
     @media (max-width: 960px) {
+        bottom: unset;
         height: 700px;
         max-width: 100%;
         top: 38vh;
         object-fit: cover;
     }
 
-    @media (max-width: 600px) {
-        top: 30vh;
+    @media (max-width: 800px) {
+        top: 38vh;
+    }
+
+    @media (max-width: 500px) {
+        top: 25vh;
+        object-fit: contain;
+    }
+
+    @media (max-width: 330px) {
+        top: 15vh;
     }
 }
 
@@ -56,10 +66,8 @@ header {
         width: 100vw;
     }
 
-    @media (max-width: 375px) {
+    @media (max-width: 400px) {
         top: 20vh;
-        height: unset;
-        width: 100vw;
     }
 }
 
@@ -98,9 +106,15 @@ header {
             margin-top: 15px;
             margin-left: 20vw;
         }
-        @media (max-width: 600px) {
-            margin-left: 0;
-            width: 100%;
+        @media (max-width: 700px) {
+            margin-left: 15vw;
+            width: 30vw;
+        }
+        @media (max-width: 550px) {
+            margin-left: 5vw;
+            width: 50vw;
+            padding-left: 16px !important;
+            padding-right: 16px !important;
         }
     }
 
