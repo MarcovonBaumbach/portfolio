@@ -17,8 +17,8 @@
             assign users and categories.
         </span>
         <div class="button-div">
-            <button class="buttons button-violett" (click)="openJoin()">Live test</button>
-            <button class="buttons button-outline" (click)="githubJoin()">Github</button>
+            <button class="buttons button-violett" (click)="openProject('join')">Live test</button>
+            <button class="buttons button-outline" (click)="openGithub('Join')">Github</button>
         </div>
     </div>
 </div>
@@ -33,25 +33,41 @@
             Help Pepe to collect coins and throw salsa bottles against the big chicken to defeat it.
         </span>
         <div class="button-div button-div-reverse">
-            <button class="buttons button-violett" (click)="openElPolloLoco()">Live test</button>
-            <button class="buttons button-outline" (click)="githubElPolloLoco()">Github</button>
+            <button class="buttons button-violett" (click)="openProject('elPolloLoco')">Live test</button>
+            <button class="buttons button-outline" (click)="openGithub('ElPolloLoco')">Github</button>
         </div>
     </div>
 </div>
 
 <div class="project-img">
     <img class="img-violett" src="assets/img/portfolio-violett.png">
-    <img class="higher-index" src="assets/img/laptop-ringoffire.png">
+    <img class="higher-index" src="assets/img/laptop-simplecrm.png">
     <div class="project-content">
-        <h3>Ring of Fire</h3>
-        <h4>JavaScript | Angular | Firebase | HTML | CSS</h4>
+        <h3>Simple CRM</h3>
+        <h4>Angular | Firebase | Material | API</h4>
         <span>
-            A card game that let's you play online with your friends. 
-            It is a CRUD app that uses firebase as storage.
+            A simple CRM tool to manage your contacts and business deals, 
+            helping you tracking your sales results.
         </span>
         <div class="button-div">
-            <button class="buttons button-violett" (click)="openRingOfFire()">Live test</button>
-            <button class="buttons button-outline" (click)="githubRingOfFire()">Github</button>
+            <button class="buttons button-violett" (click)="openProject('crm')">Live test</button>
+            <button class="buttons button-outline" (click)="openGithub('crm')">Github</button>
+        </div>
+    </div>
+</div>
+
+<div class="project-img project-reverse">
+    <img src="assets/img/laptop-pokedex.png">
+    <div class="project-content content-reverse">
+        <h3>Pokedex</h3>
+        <h4>JavaScript | HTML | CSS | API</h4>
+        <span>
+            This is a simple library based on the PokéAPI,
+             that provides and catalogues pokemon information.
+        </span>
+        <div class="button-div button-div-reverse">
+            <button class="buttons button-violett" (click)="openProject('pokedex')">Live test</button>
+            <button class="buttons button-outline" (click)="openGithub('pokedex')">Github</button>
         </div>
     </div>
 </div>
