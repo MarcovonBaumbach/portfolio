@@ -2,11 +2,13 @@ header {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    padding-top: 27px;
     gap: 50px;
     z-index: 2;
 
     @media (max-width: 960px) {
         gap: 5px;   
+        padding-top: 0;
     }
 
     div {
